@@ -98,7 +98,14 @@ body{
 }
 
 .weather{
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.weather.show{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .error{
@@ -115,6 +122,15 @@ body{
     justify-content: center;
     gap: 12px;
     margin-top: 24px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.loading.show{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .loading div{

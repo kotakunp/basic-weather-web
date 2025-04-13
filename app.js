@@ -40,6 +40,8 @@ async function checkWeather(city) {
         }
 
         weatherBox.classList.add("show");
+        document.querySelector(".weather").style.display = "block";   
+        document.querySelector(".error").style.display = "none"; 
     }
 
     animation.classList.remove("show");
